@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        .skin{
+            background-color: rgba(233, 233, 145, 0.73);
+        }
+        .purp{
+            background-color: rgba(92, 157, 242, 0.627);
+        }
+        .green{
+            background-color: rgba(96, 244, 96, 0.685);
+        }
+    </style>
+</head>
+<body>
+    <h2>Replicate this table </h2>
+    <img src="images/table.png" alt="">
+    <br><br><br><br>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="3">Day</th>
+                <th colspan="3">Seminar</th>
+                
+            </tr>
+            <tr>
+                <th colspan="2">Schedule</th>
+                <th rowspan="2">Topic</th>
+            </tr>
+            <tr>
+                <th>Begin</th>
+                <th>End</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Monday</td>
+            <td class="skin" rowspan="2">8:00 a.m.</td>
+            <td class="purp" rowspan="2">5:00 p.m.</td>
+            <td>Introduction to XML</td>
+            </tr>
+            <tr>
+                <td>
+                    Validity:DTD and Relax NG
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="3">Tuesday</td>
+                <td  class="skin" >8:00 a.m.</td>
+                <td class="skin" >11:00 a.m.</td>
+                <td >Xpath</td>
+            </tr>
+                <td class="skin" >11:00 a.m.</td>
+                <td class="green">2:00 </a></td>
+                <td rowspan="2" >XSL Transformation</td>
+            </tr>
+            <tr>
+                <td class="green" >2:00 p.m.</td>
+                <td class="purp"  >5:00 p.m.</td>
+
+
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td class="skin">8:00 am</td>
+                <td class="green">12:00 pm</td>
+                <td>XSL Formatting object</td>
+            </tr>
+        </tbody>
+   </table>
+   
+
+</body>
+</html>
