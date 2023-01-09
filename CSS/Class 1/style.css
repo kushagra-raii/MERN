@@ -1,0 +1,17 @@
+p{
+            
+    font-size: larger;
+} 
+ p:hover{
+    font-family: cursive;
+    font-size: larger;
+} 
+/* h1{
+    background-color: aqua;
+} */
+.green{
+    color: green;
+}
+.red{
+    color: red;
+}
