@@ -1,0 +1,30 @@
+.box{
+    border: 1px solid black;
+    height: 200px;
+    width: 150px;
+    background-image: linear-gradient(turquoise,pink);
+    background-image: linear-gradient(to bottom right,rgba(64, 224, 208, 0),pink);
+}
+
+.mybox{
+    border: 1px solid black;
+    height: 200px;
+    width: 150px;
+    margin: 15px;
+    background-image: radial-gradient(circle,yellow 1%,Turquoise);
+}
+.mycbox{
+    border: 1px solid black;
+    height: 200px;
+    width: 150px;
+    margin: 15px;
+    background-image: conic-gradient(red,yellow,green);
+}
+h1{
+    text-shadow: 5px 5px 5px green,3px 3px 3px yellow;
+}
+.abox{
+    box-shadow: -5px -5px 5px green,3px 3px 3px yellow;
+    height: 200px;
+    width: 150px;
+}

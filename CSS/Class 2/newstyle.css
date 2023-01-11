@@ -1,0 +1,16 @@
+.box{
+    max-height: 100px;
+    border: 1px solid black;
+    overflow: scroll;
+}
+.min{
+    min-height: 100px;
+    margin: 10px;
+    border: 1px solid black;
+}
+#fresh{
+    height: 50px;
+    border: 1px solid black;
+    overflow: auto;
+    
+}
