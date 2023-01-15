@@ -1,0 +1,17 @@
+.container{
+    height: 500px;
+    border :2px solid green; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    border: 1px solid brown;
+    background-color: aqua;
+    width: 100px;
+    
+}
+#box2{
+    align-self: stretch;
+}
