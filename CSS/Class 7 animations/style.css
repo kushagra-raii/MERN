@@ -1,0 +1,16 @@
+.container{
+    --my-gray:#18181b;
+    border:1px solid brown;
+    background-color: var(--my-gray);
+    height: 300px;
+    width: 300px;
+
+}
+
+.box{
+    border: 2px solid green ;
+    background-color: aqua;
+    
+    color: white;
+
+}

@@ -1,0 +1,18 @@
+.container{
+    border: 1px solid brown;
+    background-color: yellow;
+    height: 700px;
+    width: 600px;
+    display: grid;
+    grid-template-rows: repeat(3,100px);
+    grid-template-columns: repeat(2,100px);
+    gap: 10px;
+
+    /* justify-content: same as flex; */
+    /* align-items: vertical inside grid; */
+}
+
+.box{
+    border: 1px solid red;
+    background-color: aqua;
+}

@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+.container{
+    background-color: brown;
+    height: 500px;
+    display: grid;
+    border: 3px solid black;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 6fr 1fr;
+    gap: 1px;
+}
+
+.box1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    /* column-gap: 1; */
+}
+.box{
+    background-color: aqua;
+    border: 3px solid black;
+    /* height: 80px; */
+    /* width: 80px; */
+}
+.box5{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}

@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    font-family: verdana;
+
+}
+
+h2,span{
+    font-family: cursive;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(30, 38%, 92%);;
+    
+}
+
+.productCard{
+    display: flex;
+    margin: 1em 2.2em;
+    border-radius: 20px;
+    max-width: 550px;
+    /* border: 1px solid black; */
+    overflow: hidden;
+}
+
+.mugInfo{
+    width:100%;
+    background-color: #fff;
+}
+.mugInfo > p{
+    padding: 20px;
+    color: #444;
+    font-size: small;
+
+    /* margin: 20px; */
+}
+.mugInfo > h2{
+    padding-left: 20px;
+    /* padding: 20px; */
+    /* margin: 20px; */
+}
+.strike{
+    color: #444;
+}
+
+
+.price{
+    padding: 20px;
+    font-size: xx-large;
+    color:  hsl(158, 36%, 37%);
+}
+
+img{
+    max-width: 100%;
+    height: 100%;
+}
+
+button{
+    background-color: hsl(158, 36%, 37%);
+    padding:  10px 0px ;
+    margin: 20px;
+    border: none;
+    width: 85%;
+    border-radius: 10px;
+
+}
+.btnItem{
+    /* padding: 5px; */
+    padding-right: 5px;
+    color: white;
+}
+
