@@ -17,3 +17,4 @@ console.log(secondCopy);
 
 let thirdCopy = {...rectangle};
 console.log(thirdCopy);
+
