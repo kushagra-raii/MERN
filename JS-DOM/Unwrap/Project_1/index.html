@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- Wrapper  -->
+    <div class="w-[100vw] h-[100vh] flex items-center justify-center bg-[#344151] overflow-hidden">
+        <div class="flex flex-col gap-6  ">
+            <div class="text-[#031864]">Increment And Decrement</div>
+            <div class="flex justify-between justify-center bg-white px-4 py-2 rounded-md">
+                <button onclick="decrement()" class="px-4 border-r-2">
+                    <i class="fa-solid fa-minus "></i>
+
+                </button>
+                <div id="counter" class="font-bold text-[1.1em]">
+                    0
+                </div>
+                <button onclick="increment()" class="px-4 border-l-2">
+                    <i class="fa-solid fa-plus"></i>
+
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
