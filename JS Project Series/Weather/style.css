@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #660066;
+    background-color: #d99dd9;
+    
+}
+#wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    height: 20px;
+}
+.appHead{
+    color: #eee;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+
+}
+.mainApp{
+    /* width: 500px; */
+    margin-top: -200px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    position: relative;
+    
+}
+.weatherBox,.searchBox{
+    background-color: #d99dd9;
+    width: 100%;
+    padding: 10px;
+    padding-top: 0;
+
+    
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    height: 35vh;
+    gap: 25px;
+    background-color: #d99dd9;
+    color: white;
+    padding-top: 0px; 
+    
+}
+.searchBox{
+    display: flex;
+    gap: 10px;
+}
+
+.tabs{
+    display: flex;
+    /* gap: 10px; */
+    width: 100%;
+    /* padding: 10%; */
+    padding-top: 0;
+    /* margin-left: -10%; */
+
+}
+.tab{
+    padding-bottom: 10px;
+    width: 120px;
+    padding-top: 7px; 
+    border-style: none; 
+    color: white;
+    background-color: #aa1faa;
+    background-color: #d99dd9;
+    
+}
+.currentTab{
+    background-color: #aa1faa; 
+}
+
+.notActive{
+    /* display: none; */
+    visibility: hidden;
+}
+
+.grantAccess,.loading{
+    position: absolute;
+    background-color: #d99dd9; 
+    top: 100px;
+    max-width: 92%;
+    height: 61%;
+
+}
+.grantAccess{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    
+}
+.grantAccess>img{
+    height: 60px;
+    width: 60px;
+}
+.grantAccess>button{
+    background-color: transparent;
+    border: 2px solid #aa1faa;
+    color: #aa1faa;
+    font-weight: 600;
+}
+.loading{
+    width: 99%;
+    left: 10px;
+    height: 212px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.loadImg{
+    height: 150px;
+    width: 150px;
+}
+
+.active{
+    display: flex;
+}
+.cityName{
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#temperature{
+    font-family: cursive;
+    font-size: 1.2rem;
+    padding-left: 5px;
+}
+.errorScreen{
+    position: absolute;
+    background-color: #d99dd9;
+    height: 100%;
+    width: 100%;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    display: none;
+}
+.errorScreen>img{
+    width: 100px;
+    height: 100px;
+}
+.errorScreen>p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}

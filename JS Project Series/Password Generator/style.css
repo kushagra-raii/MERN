@@ -10,9 +10,12 @@
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background-color: #18181b;
+    background-color: #18181b; 
     color: #ffffff;
     font-size: 1.1em;
+    position: fixed;
+    left: 0;
+    top: 0;
 }
 
 h1{

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="mainApp">
+            <h1 class="appHead">Weather App</h1>
+
+
+
+            <div class="hero">
+                <div class="tabs">
+
+                    <button class="tab" id="yourWeather"><span>Your Weather</span></button>
+                    <button class="tab" id="searchWeather"><span>Search weather</span></button>
+                </div>
+                <div class="searchBox" id="searchBox">
+                    <input id="city" onchange="getCityWeather()" type="text" placeholder="Search for City">
+                    <!-- <input type="submit" value="">/ -->
+                    <img src="./images/search.png" class="searchImg" id="searchImg" alt="">
+                </div>
+
+                <div class="weatherBox" id="weatherBox">
+                    <p id="place" class="cityName">Indore</p>
+                    <p ><span id="temperature"></span>°C</p>
+                </div>
+                <div class="grantAccess" id="grantAccess">
+                    <img src="./images/location.png" grantImg alt="">
+                    <h2>Grant Location Access</h2>
+                    <p>Allow Access to get weather Information</p>
+                    <button> Grant Access</button>
+                </div>
+                <div class="loading" id="loading">
+                    <img src="./images/loading.gif" class="loadImg" alt="">
+                    <p>Loading</p>
+                </div>
+                <div class="errorScreen" id="errSCR">
+                    <img src="./images/not-found.png" alt="">
+                    <p>Weather Not Found</p>
+                </div>
+            </div>
+
+            
+
+            
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
