@@ -1,0 +1,12 @@
+.App{
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  color: aliceblue;
+  
+}
+body{
+  background-color: turquoise;
+  margin: 0;
+  padding: 0;
+}
