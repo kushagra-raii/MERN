@@ -1,12 +1,8 @@
 .App{
-  width: 100vw;
-  height: 100vh;
-  text-align: center;
-  color: aliceblue;
-  
-}
-body{
-  background-color: turquoise;
-  margin: 0;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border: 2px solid black;
+  padding: 12px;
+  border-radius: 10px;
 }

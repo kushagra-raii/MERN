@@ -1,0 +1,10 @@
+.product{
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    justify-content:space-evenly;
+    border: 2px solid aqua;
+    padding: 12px;
+    border-radius: 20px;
+}
+

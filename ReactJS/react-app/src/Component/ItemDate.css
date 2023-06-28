@@ -1,7 +1,9 @@
-.mfgDate>span {
-    padding: 2px;
-    
-}
 .mfgDate{
-    background-Color: aqua;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    border:2px solid yellow;
+    padding: 3px 25px;
+    /* width: 68px; */
+    border-radius: 10px;
 }
