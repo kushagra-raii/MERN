@@ -2,6 +2,7 @@
 import './App.css';
 import Cards from './Component/Cards';
 import Product from './Component/Product';
+import NewProduct from './Component/NewProduct';
 
 function App() {
   const response = [
@@ -24,10 +25,17 @@ function App() {
       itemYear:"2011",
     }
   ];
+
+  function updateProduct(newProduct){
+      console.log("Inside App.js");
+      console.log(newProduct);
+  }
+
   return (
     
-
+    
     <Cards>
+    <NewProduct updateProduct={updateProduct} />
       <div className="App">
       <Product specs={response[0]}></Product>
       <Product specs={response[1]} />
