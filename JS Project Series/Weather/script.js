@@ -76,7 +76,7 @@ const city = document.getElementById("city");
 
 async function getCityWeather() {
     
-        loadingScreen.classList.add("active");
+    loadingScreen.classList.add("active");
     let place = city.value;
     const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${place}&appid=${API_KEY}&units=metric`); 
     const data = await response.json();

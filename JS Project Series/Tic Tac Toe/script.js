@@ -132,7 +132,6 @@ function darkMode() {
     dark.classList.remove("notActive");
     light.classList.add("notActive");
     currentThemeDark = true;
-
 }
 function lightMode() {
     light.classList.remove("notActive");
@@ -142,19 +141,12 @@ function lightMode() {
     root.setProperty("--accent-color", "#00000026");
     root.setProperty("--border-color", "#00000040");
     localStorage.setItem('preferredModeDark', 'false');
-    currentThemeDark = false;
-    
-
+    currentThemeDark = false;  
 }
-
 theme.addEventListener("click",() => { themeChange(); });
-
 function themeChange(){
-    console.log("aaaa");
-
     if (currentThemeDark) {
         lightMode();
     }
     else darkMode();
-
 }
