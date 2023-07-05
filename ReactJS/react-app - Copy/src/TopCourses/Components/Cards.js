@@ -1,24 +1,31 @@
-import React from 'react'
-import Card from '../../PlanWithLove/Components/Card';
+import React from 'react';
+import Card from './Card';
 
 const Cards = ({ courses }) => {
-    let allCourses = [];
-    const getCourse = () => {
-        Object.values(courses).forEach((courseCategory) => {
-            courseCategory.forEach((course) => {
-                allCourses.push(course);
-            })
-        })
-        return allCourses;
 
-    }
+    const getCourse = () => {
+
+        let allCourses = [];
+        if (courses !== null) {
+            Object.values(courses).forEach((courseCategory) => {
+                courseCategory.forEach((course) => {
+                    allCourses.push(course);
+                })
+            });
+        }
+
+
+        return allCourses;
+    };
+      
     return (
+
         <div>
-            {getCourse().map( (course) => {
-                <Card/>
+            {getCourse().map((course) => {
+                return <Card key={course.id} course={course} />;
             })}
         </div>
-    )
-}
+    );
+};
 
-export default Cards
+export default Cards;

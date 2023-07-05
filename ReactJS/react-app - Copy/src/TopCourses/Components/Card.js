@@ -1,13 +1,25 @@
-import React from 'react'
+import React from 'react';
+import { FcLike } from 'react-icons/fc';
 
-const Card = () => {
+const Card = ({ course }) => {
+  // console.log(course.image.url);
   return (
     <div>
-        <div>
-            <img ></img>
-        </div>
-    </div>
-  )
-}
 
-export default Card
+      <div>
+        <img src={course.image.url} alt="course" />
+        <div>
+          <button>
+            <FcLike fontSize="1.75rem" />
+          </button>
+        </div>
+      </div>
+      <div>
+        <p>{course.title}</p>
+        <p>{course.description}</p>
+      </div>
+    </div>
+  );
+};
+
+export default Card;

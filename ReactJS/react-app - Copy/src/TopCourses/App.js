@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import { apiUrl,filterData } from "./data";
 import NavBar from "./Components/NavBar"
 import Filter from "./Components/Filters"
-import Card from "./Components/Card"
 import { toast } from "react-toastify";
+import Cards from "./Components/Cards";
 
 const App = () => {
   const [courses, setCourses] = useState(null);
@@ -12,7 +12,9 @@ const App = () => {
       try{
         const res = await fetch(apiUrl);
         const output = await res.json();
+        console.log(output);
         setCourses(output.data);
+
       }
       catch{
         toast.error("Something Went Wrong");
@@ -20,14 +22,19 @@ const App = () => {
     }
     fetchData();
   },[]);
+
+
+    // console.log(Object.values(courses))
+
   
   return (
     <div>
+    
       <NavBar/>
       
-      <Filter filterData={filterData}/>
+      <Filter key={filterData.id} filterData={filterData}/>
 
-      <Card courses={courses}/>
+      <Cards courses={courses}/>
     </div>
   );
 };

@@ -5,7 +5,7 @@ import React from 'react'
     <div>
         {
             filterData.map((data)=> {
-                return <button>
+                return <button key={data.id}>
                     {data.title}
                 </button>
             })
