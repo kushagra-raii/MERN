@@ -12,13 +12,13 @@ function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   return (
-  <div>
+  <div >
     <NavBar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}/>
 
     <Routes>
       <Route path="/" element={<Home/>} />
       <Route path="/login" element={<Login/>} />
-      <Route path="/signUn" element={<Signup/>} />
+      <Route path="/signUp" element={<Signup/>} />
       <Route path="/dashboard" element={<Dashboard/>} />
     </Routes>
   </div>
