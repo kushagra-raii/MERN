@@ -9,10 +9,10 @@ const Template = ({title,description1,description2,image,formType,setIsLoggedIn}
     <div>
         <div>
             <h1>{title}</h1>
-            <p>
+            
                 <span>{description1}</span>
                 <span>{description2}</span>
-                {formType==="signUp"?(<SignupForm/>):(<LoginForm/>)}
+                {formType==="signup"?(<SignupForm setIsLoggedIn={setIsLoggedIn}/>):(<LoginForm setIsLoggedIn={setIsLoggedIn}/>)}
                 <div>
                     <div></div>
                     <p>OR</p>
@@ -21,7 +21,7 @@ const Template = ({title,description1,description2,image,formType,setIsLoggedIn}
                 <button>
                     <p>SignUp with Google</p>
                 </button>
-            </p>
+           
         </div>
         <div>
             <img src={frame} alt='' width={558} height={504} loading='lazy'></img>

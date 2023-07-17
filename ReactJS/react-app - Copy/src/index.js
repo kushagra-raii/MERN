@@ -8,9 +8,9 @@ import "react-toastify/dist/ReactToastify.css"
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <div> 
+  <div id="indexPage"> 
     <BrowserRouter>
-    <App />
+    <App  />
     <ToastContainer/>
     </BrowserRouter>
   </div>
