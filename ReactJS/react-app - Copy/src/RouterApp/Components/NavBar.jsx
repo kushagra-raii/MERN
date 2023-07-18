@@ -8,12 +8,12 @@ const NavBar = (props) => {
     let setIsLoggedIn = props.setIsLoggedIn;
 
     return (
-        <div className='flex justify-evenly items-center mt-2'>
+        <div className='flex justify-between items-center w-11/12 max-w-[1160px] py-4 mx-auto'>
             <Link to="/">
                 <img src={logo} alt='' width={160} height={32} loading='lazy' />
             </Link>
             <nav>
-                <ul className='flex gap-3' >
+                <ul className='flex gap-6 text-richBlack-100 ' >
                     <li>
                         <Link to="/">Home</Link>
                     </li>
@@ -25,24 +25,24 @@ const NavBar = (props) => {
                     </li>
                 </ul>
             </nav>
-            <div className='flex gap-3 '>
+            <div className='flex gap-4 items-center text-richBlack-100'>
                 {!isLoggedIn &&
                     <Link to="/login">
-                        <button >
+                        <button className=' bg-richBlack-700 py-2 px-3 rounded-lg border border-richBlack-700' >
                             Login
                         </button>
                     </Link>
                 }
                 {!isLoggedIn &&
                     <Link to="/signup">
-                        <button>
+                        <button className=' bg-richBlack-700 py-2 px-3 rounded-lg border border-richBlack-700'>
                             Sign Up
                         </button>
                     </Link>
                 }
                 {isLoggedIn &&
                     <Link to="/">
-                        <button onClick={()=>{
+                        <button className=' bg-richBlack-700 py-2 px-3 rounded-lg border border-richBlack-700' onClick={()=>{
                             setIsLoggedIn(false);
                             toast.success("Logged Out")
 
@@ -54,7 +54,7 @@ const NavBar = (props) => {
                 }
                 {isLoggedIn &&
                     <Link to="/dashboard">
-                        <button>
+                        <button className=' bg-richBlack-700 py-2 px-3 rounded-lg border border-richBlack-700'>
                             Dashboard
                         </button>
                     </Link>
