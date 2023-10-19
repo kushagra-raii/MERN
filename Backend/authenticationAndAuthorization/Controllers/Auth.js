@@ -92,7 +92,7 @@ exports.login = async (req, res) => {
         success: true,
         token,
         userExist: userExist,
-        message: "user loggedIn successfully",
+        message: `${userExist.role} loggedIn successfully`,
       });
     } else {
       return res.status(403).json({
